@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Roboto&family=DM+Sans:wght@400;500;700"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "DM Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      class="flex h-screen font-dm justify-between flex-col px-1 mybp:flex-row lg:px-0 gap-3"
+    >
+      <section class="mx-auto lg:py-[68px] lg:tracking-wider tracking-normal">
+        <nav class="nav-bar flex justify-between items-center mb-16 pt-10 pb-3">
+          <span class="logo lg:text-4xl text-_purple text-3xl font-bold"
+            >Startup 3</span
+          >
+          <ul class="flex">
+            <li><a class="nav-item text-gray-400">Pricing</a></li>
+            <li><a class="nav-item text-gray-400 ml-3.5 lg:ml-8">About</a></li>
+          </ul>
+        </nav>
+        <div class="mb-10">
+          <h1
+            class="xl:text-6xl sm:text-5xl text-[34px] text-_purple font-bold md:tracking-normal lg:tracking-wider"
+          >
+            Great tool to boost <br />
+            your startup
+          </h1>
+          <p class="lg:text-lg text-base font-medium mt-5 text-gray-300">
+            We made it so beautiful and simple. It combines <br />landings,
+            pages, blogs and shop screens. It is definitely <br />
+            the tool you need in your collection!<br />
+          </p>
+        </div>
+        <div class="pb-4 flex items-center sm:flex-row flex-col">
+          <button
+            class="bg-teal-400 rounded-full w-full sm:mb-0 mb-2 lg:w-auto font-weight shadow-md active:shadow-sm text-white py-4 px-8"
+          >
+            Get Started</button
+          ><button
+            class="rounded-full font-bold w-full lg:w-auto border border-[#8c8c8c93] sm:border-none text-_purple shadow-md active:shadow-sm ml-3 py-4 px-8"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <footer>
+          <p class="agreement drop-shadow-sm text-gray-300">
+            By signing up, you agree to the Terms of Service
+          </p>
+        </footer>
+      </section>
+      <section class="banner lg:mt-0 mx-auto lg:mx-0">
+        <img
+          src="Images/Photo.png"
+          alt=" banner Image of a person"
+          class="banner-img h-full object-cover xl:max-w-[550px] rounded-md lg:rounded-none mx-auto"
+        />
+      </section>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              _purple: "#1E0E62",
+            },
+            screens: {
+              mybp: "1095px",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="tailwind.config.js"></script>
+  </body>
+</html>
